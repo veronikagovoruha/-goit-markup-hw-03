@@ -19,6 +19,20 @@ h2{
     letter-spacing: 0.03em;
 }
 
+a:focus,
+button:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    list-style-type:none;
+}
+
+span{
+    margin: 0;
+    padding: 0;
+}
+
 /* navigation */
 .header-nav-logo{
     font-family: Raleway;
@@ -27,11 +41,12 @@ h2{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
-    color: #2196F3;
+    color: var(--primary-text-color);
+
 }
 
 .header-nav{
-    color: #000000;
+    color: var(--color-hover);
 }
 
 .header-nav-list{
@@ -120,6 +135,7 @@ h2{
 
 
 .banner-button{
+    font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.8;

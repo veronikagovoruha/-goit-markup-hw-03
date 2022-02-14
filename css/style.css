@@ -235,16 +235,12 @@ span{
 /* banner */
 .banner{
     background-color: #2F303A;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding-bottom: 200px;
     padding-top: 200px;
 }
 
 
 .banner-title{
-    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -253,6 +249,9 @@ span{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 
@@ -298,6 +297,7 @@ span{
     text-transform: uppercase;
     width: 270px;
     margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 .features-title:last-child{
@@ -348,7 +348,8 @@ span{
     padding-bottom: 94px;
 }
 
-.team-image{
+.team-wrapper{
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -363,16 +364,13 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-title-name{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.team-text{
-    padding-bottom: 30px;
-}
 
 .team-title{
     margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .team-item + .team-item{
@@ -430,7 +428,7 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -455,7 +453,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 .portfolio-text{
@@ -468,8 +466,10 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-wrapper{
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .portfolio-link{
@@ -481,16 +481,10 @@ border-radius: 0px 0px 4px 4px;
     flex-wrap: wrap;
 }
 
-.portfolio-item-title,
-.portfolio-text{
-    padding-left: 24px;
-}
-
 
 .portfolio-item{
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
+    
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;

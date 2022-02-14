@@ -19,12 +19,19 @@ h2{
     letter-spacing: 0.03em;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
     margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0; 
 }
 
 ul{
     margin: 0;
+    padding: 0;
 }
 
 li > a:focus{
@@ -48,7 +55,7 @@ span{
 }
 
 .container{
-    width: 1230px;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
@@ -217,12 +224,13 @@ span{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 94px;
+    padding-bottom: 200px;
+    padding-top: 200px;
 }
+
 
 .banner-title{
     margin-bottom: 30px;
-    margin-top: 200px;
 
     font-weight: 900;
     font-size: 44px;
@@ -233,11 +241,8 @@ span{
     color: #FFFFFF;
 }
 
-.banner-wrapper-button{
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 200px;
-}
+
+
 
 .banner-wrapper-button:focus{
     opacity: .4;
@@ -254,6 +259,7 @@ span{
     letter-spacing: 0.06em;
     color: #FFFFFF;
     padding: 10px 32px;
+    margin: 0 auto;
 
     background: var(--color-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -264,7 +270,8 @@ span{
 
 /* features */
 .features{
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .features-title-hidden{
@@ -277,7 +284,7 @@ span{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    max-width: 270px;
+    width: 270px;
     margin-right: 30px;
 }
 
@@ -301,7 +308,8 @@ span{
 /* do */
 
 .do{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .do-list{
@@ -312,11 +320,24 @@ span{
     margin-left: 30px;
 }
 
+.do-image{
+    display: block;
+}
+
+.do-title{
+    margin-bottom: 50px;
+}
+
 
 /* team */
 .team{
     background-color: #F5F4FA;
+    padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.team-image{
+    padding-bottom: 30px;
 }
 
 .team-list{
@@ -329,9 +350,16 @@ span{
 border-radius: 0px 0px 4px 4px;
 }
 
+.team-title-name{
+    padding-bottom: 10px;
+}
+
+.team-text{
+    padding-bottom: 30px;
+}
+
 .team-title{
     margin: 0;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -375,6 +403,7 @@ border-radius: 0px 0px 4px 4px;
     background: #F5F4FA;
     border-radius: 4px; 
     cursor: pointer;
+    padding: 6px 22px;
 }
 
 .filter-button:hover{
@@ -385,9 +414,26 @@ border-radius: 0px 0px 4px 4px;
     border-radius: 4px;
 }
 
+.filter-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+
+.filter-item{
+    margin-right: 8px;
+}
+
+.filter-item:last-child{
+    margin-right: 0;
+}
+
 /* portfolio */
 .portfolio{
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-item-title{
@@ -397,6 +443,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    padding-bottom: 4px;
 }
 
 .portfolio-text{
@@ -406,6 +453,11 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+}
+
+.portfolio-wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio-link{
@@ -439,6 +491,8 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 0;
 }
 
+
+
 .portfolio-item-title:hover,
 .portfolio-text:hover,
 .portfolio-item-title:focus,
@@ -446,15 +500,4 @@ border-radius: 0px 0px 4px 4px;
     color: var(--color-hover);
 }
 
-.filter-wrapper{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
 
-
-.filter-item{
-    margin-right: 8px;
-}
